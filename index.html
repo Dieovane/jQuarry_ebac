@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>📝 Lista de Tarefas</h1>
+    </header>
+
+    <div class="instruções">
+        <p>
+            <h3>
+                Como usar:
+            </h3>
+            <li>
+                Escreva a tarefa desejada no campo de texto abaixo;
+            </li>
+            <li>
+                Clique no botão 'Adicionar' para colocar a tarefa na lista;
+            </li>
+            <li>
+                Quando a tarefa estiver completa, é só clicar nela para ser riscada da lista!
+            </li>
+            <li>
+                🌟 Recarregue a página se quiser começar a lista do zero novamente 
+            </li>
+        </p>
+    </div>
+
+  <form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+    <button type="submit">Adicionar</button>
+  </form>
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
